@@ -6,9 +6,9 @@ function findUserByUsername(usersArray, username) {
 
 function removeUser(usersArray, username) {
   let indexToDelete = usersArray.findIndex(function (obj) {
-    return obj.username === username;
+    return obj.username === username; // use previous code to locate matching username
   });
-  if (indexToDelete === -1) return;
+  if (indexToDelete === -1) return; //skipped if username not deleted
 
-  return usersArray.splice(indexToDelete, 1)[0];
+  return usersArray.splice(indexToDelete, 1)[0]; //uses index to set first param in splice
 }
