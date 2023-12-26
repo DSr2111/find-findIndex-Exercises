@@ -13,7 +13,7 @@ findUserByUsername(users, 'taco') // undefined
 
 function findUserByUsername(usersArray, username) {
   return usersArray.find(function (obj) {
-    return obj[key] === username;
+    return obj.username === username; //obj has key 'username', we are accessing it using dot notation, could also use obj.['username']
   });
 }
 
